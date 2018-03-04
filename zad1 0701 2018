@@ -6,10 +6,10 @@ public class pr01 {
         Scanner scanner = new Scanner(System.in);
 
 
-        int GrStart = Integer.parseInt(scanner.nextLine());
-        int mGrBake = Integer.parseInt(scanner.nextLine());
+        double GrStart = Double.parseDouble(scanner.nextLine());
+        double mGrBake = Double.parseDouble(scanner.nextLine());
         double pPriseBake = Double.parseDouble(scanner.nextLine());
-        int bBroiProdadeni = Integer.parseInt(scanner.nextLine());
+        double bBroiProdadeni = Double.parseDouble(scanner.nextLine());
         double sBroiProdadeni = Integer.parseInt(scanner.nextLine());
 
 

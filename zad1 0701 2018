@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class pr01 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int GrStart = Integer.parseInt(scanner.nextLine());
+        int mGrBake = Integer.parseInt(scanner.nextLine());
+        double pPriseBake = Double.parseDouble(scanner.nextLine());
+        int bBroiProdadeni = Integer.parseInt(scanner.nextLine());
+        double sBroiProdadeni = Integer.parseInt(scanner.nextLine());
+
+
+        double DayIncom = bBroiProdadeni*pPriseBake;
+        double doughPerDay = bBroiProdadeni*mGrBake;
+        double Ostatuk = GrStart-doughPerDay;
+        double CakeDough = Ostatuk + (GrStart-Ostatuk);
+        double PriseCake = pPriseBake+(pPriseBake*25/100);
+        double GrCake = mGrBake-(mGrBake*20/100);
+        double DoughCake= sBroiProdadeni*GrCake;
+        double SumCake = sBroiProdadeni* PriseCake;
+        double SumGr = (GrStart+ (GrStart-Ostatuk))*0.004;
+        double PureIncom = (DayIncom+SumCake)-SumGr;
+        double DoughUsed = doughPerDay+DoughCake;
+
+                System.out.printf("Pure income: %.2f lv.", PureIncom);
+        System.out.println();
+                System.out.printf("Dough used: %.0f g.", DoughUsed);
+    }
+    }
+
+
+
